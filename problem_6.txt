@@ -25,7 +25,7 @@ H6C -> a H7C DA1C | x H7C | c H7C
 H7C -> a DA1C | x | c
 DA1 -> a DA2 DA1 | x DA2 | c DA2C DC1 | epsilon
 DA2 -> a DA3 DA1 | x DA3 | c DA3C DC1 | epsilon
-DA3 -> a DA1 | x | C DC1 | epsilon
+DA3 -> a DA1 | x | c DC1 | epsilon
 DA1C -> a DA2C DA1C | x DA2C | c | epsilon
 DA2C -> a DA3C DA1C | x DA3C | c | epsilon
 DA3C -> a DA1C | x | epsilon
