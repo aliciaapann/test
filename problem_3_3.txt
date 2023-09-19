@@ -1,0 +1,14 @@
+V = S A B C D E F G H I J
+T = a b 
+start = S 
+S -> a A a | b A b | epsilon
+A -> a B a | b B b
+B -> a C a | b C b
+C -> a D a | b D b
+D -> a E a | b E b
+E -> a F a | b F b
+F -> a G a | b G b
+G -> a H a | b H b
+H -> a I a | b I b
+I -> a J a | b J b
+J -> S 

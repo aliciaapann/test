@@ -1,0 +1,14 @@
+V = S A T T1 T2 T3 T4 T5 T6 A X
+T = a x
+start = S
+S -> A | epsilon
+T -> x T1 | epsilon
+T1 -> x T2 | epsilon
+T3 -> x T4 | epsilon
+T4 -> x T5 | epsilon
+T5 -> x T6 | epsilon
+T6 -> x | epsilon
+A -> a A x | epsilon | a X x x 
+X -> a X x x | epsilon | T
+
+

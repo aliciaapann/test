@@ -1,0 +1,13 @@
+var = S X1 X2 X3 X4 X5 Y T B1 B2
+T = a b
+start = S 
+S -> epsilon | X1 | X2 | X3 | X4 | X5
+X1 -> X1  | epsilon
+X2 -> b X2 | epsilon
+X3 -> Y b Y a Y
+Y -> a Y | b Y | epsilon
+X4 -> a X4 b | epsilon | a T b b 
+T -> a T b b | epsilon | b B1
+B1 -> b | epsilon
+X5 -> a X5 b b | b b b b B2
+B2 -> b B2 | epsilon

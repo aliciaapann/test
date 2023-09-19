@@ -1,0 +1,6 @@
+V = S X
+T = a b 
+start = S
+S -> X X X
+X -> a Y b 
+Y -> a Y b | epsilon
