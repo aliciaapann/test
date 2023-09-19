@@ -1,4 +1,4 @@
-V = S A T T1 T2 T3 T4 T5 T6 A X
+V = S A T T1 T2 T3 T4 T5 T6 A C1 C2 C3 C4 C5 C6 C7 D1 D2 D3 H
 T = a c w x
 start = S
 S -> H | T | epsilon 
