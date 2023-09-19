@@ -1,4 +1,4 @@
-V = S A T T1 T2 T3 T4 T5 T6 A C1 C2 C3 C4 C5 C6 C7 D1 D2 D3 H
+V = S A T T1 T2 T3 T4 T5 T6 A H1 H2 H3 H4 H5 H6 H7 H1C H2C H3C H4C H5C H6C H7C DA1 DA2 DA3 DA1C DA2C DA3C DC1 DC2 DC3 DC4 DC5H
 T = a c w x
 start = S
 S -> H | T | epsilon 
@@ -8,15 +8,32 @@ T3 -> x T4 | epsilon
 T4 -> x T5 | epsilon
 T5 -> x T6 | epsilon
 T6 -> x | epsilon
-H -> C1
-C1 -> a C2 D1 | x C2
-C2 -> a C3 D1 | x C3
-C3 -> a C4 D1 | x C4
-C4 -> a C5 D1 | x C5
-C5 -> a C6 D1 | x C6
-C6 -> a C7 D1 | x C7
-C7 -> a D1 | x
-D1 -> a D2 D1 | x D2 | epsilon
-D2 -> a D3 D1 | x D3 | epsilon
-D3 -> a D1 | x | epsilon
+H -> H1
+H1 -> a H2 DA1 | x H2 | c H2C DC1
+H2 -> a H3 DA1 | x H3 | c H3C DC1
+H3 -> a H4 DA1 | x H4 | c H4C DC1
+H4 -> a H5 DA1 | x H5 | c H5C DC1
+H5 -> a H6 DA1 | x H6 | c H6C DC1
+H6 -> a H7 DA1 | x H7 | c H7C DC1
+H7 -> a DA1 | x | c DC1
+H1C -> a H2C DA1C | x H2C
+H2C -> a H3C DA1C | x H3C | c H3C 
+H3C -> a H4C DA1C | x H4C | c H4C
+H4C -> a H5C DA1C | x H5C | c H5C
+H5C -> a H6C DA1C | x H6C | c H6C
+H6C -> a H7C DA1C | x H7C | c H7C
+H7C -> a DA1C | x | c
+DA1 -> a DA2 DA1 | x DA2 | c DA2C DC1 | epsilon
+DA2 -> a DA3 DA1 | x DA3 | c DA3C DC1 | epsilon
+DA3 -> a DA1 | x | C DC1 | epsilon
+DA1C -> a DA2C DA1C | x DA2C | c | epsilon
+DA2C -> a DA3C DA1C | x DA3C | c | epsilon
+DA3C -> a DA1C | x | epsilon
+DC1 -> a D2 D1 | x D2 | c | epsilon
+DC2 -> a D3 D1 | x D3 | c | epsilon
+DC3 -> a D4 D1 | x D4 | c | epsilon
+DC4 -> a D5 D1 | x D5 | c | epsilon
+DC5 -> a D1 | x | c | epsilon
+
+
 
