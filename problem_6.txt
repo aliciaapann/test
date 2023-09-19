@@ -1,14 +1,22 @@
 V = S A T T1 T2 T3 T4 T5 T6 A X
 T = a c w x
 start = S
-S -> A | epsilon
+S -> H | T | epsilon 
 T -> x T1 | epsilon
 T1 -> x T2 | epsilon
 T3 -> x T4 | epsilon
 T4 -> x T5 | epsilon
 T5 -> x T6 | epsilon
 T6 -> x | epsilon
-A -> a A x | epsilon | a X x x 
-X -> a X x x | epsilon | T
-
+H -> C1
+C1 -> a C2 D1 | x
+C2 -> a C3 D1 | x
+C3 -> a C4 D1 | x
+C4 -> a C5 D1 | x
+C5 -> a C6 D1 | x
+C6 -> a C7 D1 | x
+C7 -> a D1 | x
+D1 -> a D2 | x D2 | epsilon
+D2 -> a D3 | x D3 | epsilon
+D3 -> a | x | epsilon
 
