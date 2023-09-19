@@ -1,4 +1,4 @@
-V = S X
+V = S X Y
 T = a b 
 start = S
 S -> X X X

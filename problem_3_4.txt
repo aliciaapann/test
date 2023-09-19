@@ -1,4 +1,4 @@
-var = S X1 X2 X3 X4 X5 Y T B1 B2
+V = S X1 X2 X3 X4 X5 Y T B1 B2
 T = a b
 start = S 
 S -> epsilon | X1 | X2 | X3 | X4 | X5
