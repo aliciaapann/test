@@ -1,26 +1,8 @@
 V = S A B
 T = a b
 start = S
-S -> A A A B B B
-S -> A A B A B B
-S -> B A A A B B
-S -> A B A A B B
-S -> B B A A A B
-S -> A B B A A B
-S -> B A B A A B
-S -> A B A B A B
-S -> B A A B A B
-S -> A A B B A B
-S -> B A A B B A
-S -> A B A B B A
-S -> A A B B B A
-S -> B B A A B A
-S -> A B B A B A
-S -> B A B A B A
-S -> B B B A A A
-S -> B B A B A A
-S -> A B B B A A
-S -> B A B B A A
-A -> a 
-B -> b
+S -> Z Z Z | A Z B | B Z A | Z B A | Z A B | A B Z | B A Z
+A -> a a 
+B -> b b
+Z = a b | b a
 
