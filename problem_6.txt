@@ -9,14 +9,14 @@ T4 -> x T5 | epsilon
 T5 -> x T6 | epsilon
 T6 -> x | epsilon
 H -> C1
-C1 -> a C2 D1 | x
-C2 -> a C3 D1 | x
-C3 -> a C4 D1 | x
-C4 -> a C5 D1 | x
-C5 -> a C6 D1 | x
-C6 -> a C7 D1 | x
+C1 -> a C2 D1 | x C2
+C2 -> a C3 D1 | x C3
+C3 -> a C4 D1 | x C4
+C4 -> a C5 D1 | x C5
+C5 -> a C6 D1 | x C6
+C6 -> a C7 D1 | x C7
 C7 -> a D1 | x
-D1 -> a D2 | x D2 | epsilon
-D2 -> a D3 | x D3 | epsilon
-D3 -> a | x | epsilon
+D1 -> a D2 D1 | x D2 | epsilon
+D2 -> a D3 D1 | x D3 | epsilon
+D3 -> a D1 | x | epsilon
 
