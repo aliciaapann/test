@@ -1,4 +1,4 @@
-V = S A B
+V = S A B Z
 T = a b
 start = S
 S -> Z Z Z | A Z B | B Z A | Z B A | Z A B | A B Z | B A Z
