@@ -29,10 +29,10 @@ DA3 -> a DA1 | x | c DC1 | epsilon
 DA1C -> a DA2C DA1C | x DA2C | c | epsilon
 DA2C -> a DA3C DA1C | x DA3C | c | epsilon
 DA3C -> a DA1C | x | epsilon
-DC1 -> a DA2 DA1 | x DC2 | c | epsilon
-DC2 -> a DA3 DA1 | x DC3 | c | epsilon
-DC3 -> a DA4 DA1 | x DC4 | c | epsilon
-DC4 -> a DA5 DA1 | x DC5 | c | epsilon
+DC1 -> a DC2 DA1 | x DC2 | c | epsilon
+DC2 -> a DC3 DA1 | x DC3 | c | epsilon
+DC3 -> a DC4 DA1 | x DC4 | c | epsilon
+DC4 -> a DC5 DA1 | x DC5 | c | epsilon
 DC5 -> a DA1 | x | c | epsilon
 
 
