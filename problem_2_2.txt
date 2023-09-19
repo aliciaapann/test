@@ -1,8 +1,8 @@
-V = S A T X Y 
+V = S A T B  
 T = a b
 start = S
 S -> A A
-A -> A T | X A | A Y | a
+A -> A T | B A | A B | a
 T -> A A 
-X -> a
-Y -> b
+B -> b
+
