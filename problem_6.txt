@@ -15,4 +15,4 @@ H3W -> x H4W | w H4W | epsilon
 H4W -> x H5W | w H5W | epsilon
 H5W -> x H6W | w H6W | epsilon
 H6W -> x H7W | w H7W | epsilon
-H7W -> x | w H1 | epsilon
+H7W -> x | w | epsilon
