@@ -4,5 +4,5 @@ start = S
 S -> Z Z Z | A Z B | B Z A | Z B A | Z A B | A B Z | B A Z
 A -> a a 
 B -> b b
-Z = a b | b a
+Z -> a b | b a
 

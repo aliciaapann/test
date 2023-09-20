@@ -1,6 +1,7 @@
 V = S H1 H2 H3 H4 H5 H6 H7 H1W H2W H3W H4W H5W H6W H7W 
 T = a c w x
 start = S 
+S -> H1
 H1 -> x H2 | w H2W H1 | epsilon
 H2 -> x H3 | w H3W H1 | epsilon
 H3 -> x H4 | w H4W H1 | epsilon
