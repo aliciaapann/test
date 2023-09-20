@@ -1,17 +1,17 @@
 V = S H1 H2 H3 H4 H5 H6 H7 H1W H2W H3W H4W H5W H6W H7W 
 T = a c w x
 start = S 
-H1 -> x H2 | w H2W H1
-H2 -> x H3 | w H3W H1
-H3 -> x H4 | w H4W H1
-H4 -> x H5 | w H5W H1
-H5 -> x H6 | w H6W H1
-H6 -> x H7 | w H7W H1
-H7 -> x | w
-H1W -> x H2W | w H2W 
-H2W -> x H3W | w H3W 
-H3W -> x H4W | w H4W 
-H4W -> x H5W | w H5W 
-H5W -> x H6W | w H6W 
-H6W -> x H7W | w H7W 
-H7W -> x | w H1 
+H1 -> x H2 | w H2W H1 | epsilon
+H2 -> x H3 | w H3W H1 | epsilon
+H3 -> x H4 | w H4W H1 | epsilon
+H4 -> x H5 | w H5W H1 | epsilon
+H5 -> x H6 | w H6W H1 | epsilon
+H6 -> x H7 | w H7W H1 | epsilon
+H7 -> x | w | epsilon
+H1W -> x H2W | w H2W | epsilon
+H2W -> x H3W | w H3W | epsilon
+H3W -> x H4W | w H4W | epsilon
+H4W -> x H5W | w H5W | epsilon
+H5W -> x H6W | w H6W | epsilon
+H6W -> x H7W | w H7W | epsilon
+H7W -> x | w H1 | epsilon
